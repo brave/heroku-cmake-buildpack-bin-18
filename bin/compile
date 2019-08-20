@@ -19,7 +19,7 @@ function set-default-env (){
 }
 
 echo "-----> Fetching and vendoring cmake"
-curl 'https://github.com/brave/heroku-cmake-buildpack/releases/download/v18.0.0/cmake.tar.gz' -L -s -o - | tar -xz -C "$VENDOR_DIR"
+curl 'https://github.com/brave/heroku-cmake-buildpack-bin-18/releases/download/v18.0.0/cmake.tar.gz' -L -s -o - | tar -xz -C "$VENDOR_DIR"
 cd "$VENDOR_DIR/cmake"
 # FIXME
 ln -s $BUILD_DIR /tmp/build_d1740d7279346825c462b4d9f49e9902
