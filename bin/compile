@@ -22,7 +22,7 @@ echo "-----> Fetching and vendoring cmake"
 curl 'https://github.com/brave/heroku-cmake-buildpack-bin-18/releases/download/v18.0.0/cmake.tar.gz' -L -s -o - | tar -xz -C "$VENDOR_DIR"
 cd "$VENDOR_DIR/cmake"
 # FIXME
-ln -s $BUILD_DIR /tmp/build_d1740d7279346825c462b4d9f49e9902
+ln -s $BUILD_DIR /tmp/build_0539ee35b2faa4c7067d9a55650f93f7
 make install
 
 # FYI we do this and set the export path explicitly because we cannot assume all buildpacks copy this dir over
